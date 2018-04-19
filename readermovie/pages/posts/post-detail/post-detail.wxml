@@ -1,7 +1,8 @@
 <!--pages/posts/post-detail/post-detail.wxml-->
 <view class='post-detail-container'>
-  <image class='head-image' src='{{headImgSrc}}'></image>
-  <image catchtap='onMusicTap' class='music-play' src='/image/music/music-start.png'></image>
+  <image class='head-image' src='{{isPlayed?music.coverImg:headImgSrc}}'></image>
+  <image wx:if="{{isPlayed}}" catchtap='onMusicTap' class='music-play' src='/image/music/music-stop.png'></image>
+   <image wx:else catchtap='onMusicTap' class='music-play' src='/image/music/music-start.png'></image>
   <view class='author-data'>
     <image class='avatar-image' src='{{avatar}}'></image>
     <text class='author'>{{author}}</text>
