@@ -1,7 +1,7 @@
 {
-    "navigationBarBackgroundColor": "#405F80",
+        "navigationBarBackgroundColor": "#405f80",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "文与字",
+    "navigationBarTitleText": "阅读",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false

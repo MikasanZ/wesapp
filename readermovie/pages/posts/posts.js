@@ -12,8 +12,16 @@ Page({
   },
 
 
-  process:function(){
-    
+  onPostTap:function(event){
+    var postId = event.currentTarget.dataset.postid;
+
+    console.log("onPostTap"+postId);
+    wx.navigateTo({
+      url: 'post-detail/post-detail?id='+postId,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   },
 
   /**
